@@ -72,6 +72,7 @@ public class AddPlace extends Utils {
     @Given("Delete place payload")
     public void deletePlacePayload() throws IOException {
         System.out.println(placeId);
+        System.out.println("changes in megha's branch");
       placeReq=  given().spec(requestSpecification()).body(data.deleteApiPayload(placeId));
     }
 }
